@@ -28,6 +28,7 @@ jobs:
             -Dsonar.projectKey=arianne05_ci-cd-sample-activity
             -Dsonar.organization=arianne05
             -Dsonar.exclusions=**/*.yml
+            # Uncomment and adjust the following lines if needed
             # -Dsonar.sources= # optional
             # -Dsonar.tests= # optional
             # -Dsonar.verbose= # optional
