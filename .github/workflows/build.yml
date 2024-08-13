@@ -18,7 +18,8 @@ jobs:
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN2 }}
-          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          sonar-project-key: 'arianne05_ci-cd-sample-activity_005a8d4a-04e6-4136-a0bb-dae1b3315536'  # Replace with your SonarQube project key
+          sonar-host-url: 'http://localhost:9000/projects'  # Replace with your SonarQube server URL
       # If you wish to fail your job when the Quality Gate is red, uncomment the
       # following lines. This would typically be used to fail a deployment.
       # - uses: sonarsource/sonarqube-quality-gate-action@master
